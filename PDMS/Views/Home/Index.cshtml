@@ -2,30 +2,159 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="jumbotron">
-    <h1>ASP.NET</h1>
-    <p class="lead">ASP.NET is a free web framework for building great Web sites and Web applications using HTML, CSS and JavaScript.</p>
-    <p><a href="http://asp.net" class="btn btn-primary btn-lg">Learn more &raquo;</a></p>
-</div>
+@section PageInfo
+{
+    <div class="Section PageInfo">Page Info</div>    
+}
 
-<div class="row">
-    <div class="col-md-4">
-        <h2>Getting started</h2>
-        <p>
-            ASP.NET MVC gives you a powerful, patterns-based way to build dynamic websites that
-            enables a clean separation of concerns and gives you full control over markup
-            for enjoyable, agile development.
-        </p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301865">Learn more &raquo;</a></p>
+@section BreadAndMenu
+{
+    <div class="Section BreadAndMenu">BreadAndMenu</div>
+}
+
+<div class="Section Content">
+    <div class="Panel x1">
+        <div class="Panel-Header">
+            <div class="Panel-Header-Left">
+                Panel header
+            </div>
+            <div class="Panel-Header-Right">
+                <div class="dropdown">
+                    <i class="fa fa-gear dropbtn" onclick="myFunction()" aria-hidden="true"></i>
+                    <div id="myDropdown" class="dropdown-content">
+                        <a href="#">Link 1</a>
+                        <a href="#">Link 2</a>
+                        <a href="#">Link 3</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="Panel-Body">
+            <form action="#">
+                <div class="LabelControlDuo">
+                    <div class="label">First:</div>
+                    <div class="control"><input type="text" class="CustomTextBox" name="fname"></div>
+                </div>
+                <div class="LabelControlDuo">
+                    <div class="label">Last name ds fdsa  :</div>
+                    <div class="control"><input type="text" class="CustomTextBox" name="lname"></div>
+                </div>
+                <hr>
+                <div class="LabelControlDuo">
+                    <div class="label">
+                        <p>Please select your preferred contact method:</p>
+                    </div>
+                    <div class="control">
+                        <div>
+                            <input type="radio" id="contactChoice1" name="contact" value="email">
+                            <label for="contactChoice1">Email</label><br />
+
+                            <input type="radio" id="contactChoice2" name="contact" value="phone">
+                            <label for="contactChoice2">Phone</label><br />
+
+                            <input type="radio" id="contactChoice3" name="contact" value="mail">
+                            <label for="contactChoice3">Mail</label><br />
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="LabelControlDuo">
+                    <div class="label">Co mas:</div>
+                    <div class="control">
+                        <form action="#" method="get">
+                            <input type="checkbox" name="vehicle" value="Bike"> I have a bike<br>
+                            <input type="checkbox" name="vehicle" value="Car" checked="checked"> I have a car<br>
+                        </form>
+                    </div>
+                </div>
+                <div class="LabelControlDuo">
+                    <div class="label">Datum:</div>
+                    <div class="control">
+                        <input type="text" id="datepicker">
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
-    <div class="col-md-4">
-        <h2>Get more libraries</h2>
-        <p>NuGet is a free Visual Studio extension that makes it easy to add, remove, and update libraries and tools in Visual Studio projects.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301866">Learn more &raquo;</a></p>
+    <div class="Panel x1">
+        <div class="Panel-Header">
+            <div class="Panel-Header-Left">
+                Panel header
+            </div>
+            <div class="Panel-Header-Right">
+                <!--                            <label id="PanelRightMenu">&#9776</label>-->
+                <i class="fa fa-gear" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div class="Panel-Body">
+            <form action="#">
+                <div class="LabelControlDuo">
+                    <div class="label">First:</div>
+                    <div class="control"><input type="text" class="CustomTextBox" name="fname"></div>
+                </div>
+                <div class="LabelControlDuo">
+                    <div class="label">Last name ds fdsa  :</div>
+                    <div class="control"><input type="text" class="CustomTextBox" name="lname"></div>
+                </div>
+                <div class="LabelControlDuo">
+                    <div class="label">First:</div>
+                    <div class="control"><input type="text" class="CustomTextBox" name="fname"></div>
+                </div>
+                <div class="LabelControlDuo">
+                    <div class="label">Last name ds fd afdasd :</div>
+                    <div class="control"><input type="text" class="CustomTextBox" name="lname"></div>
+                </div>
+                <hr>
+                <div class="LabelControlDuo">
+                    <div class="label">First:</div>
+                    <div class="control"><input type="text" class="CustomTextBox" name="fname"></div>
+                </div>
+                <div class="LabelControlDuo">
+                    <div class="label">Last name d afdasd :</div>
+                    <div class="control"><input type="text" class="CustomTextBox" name="lname"></div>
+                </div>
+                <div class="LabelControlDuo">
+                    <div class="label">First:</div>
+                    <div class="control"><input type="text" class="CustomTextBox" name="fname"></div>
+                </div>
+                <div class="LabelControlDuo">
+                    <div class="label">Last name d afdasd :</div>
+                    <div class="control"><input type="text" class="CustomTextBox" name="lname"></div>
+                </div>
+                <div class="LabelControlDuo">
+                    <div class="label">First:</div>
+                    <div class="control"><input type="text" class="CustomTextBox" name="fname"></div>
+                </div>
+                <div class="LabelControlDuo">
+                    <div class="label">Last name d afdasd :</div>
+                    <div class="control"><input type="text" class="CustomTextBox" name="lname"></div>
+                </div>
+                <div class="LabelControlDuo">
+                    <div>
+                        <input type="submit" value="Submit">
+                    </div>
+                </div>
+            </form>
+        </div>
     </div>
-    <div class="col-md-4">
-        <h2>Web Hosting</h2>
-        <p>You can easily find a web hosting company that offers the right mix of features and price for your applications.</p>
-        <p><a class="btn btn-default" href="http://go.microsoft.com/fwlink/?LinkId=301867">Learn more &raquo;</a></p>
+    <div class="Panel x1">
+        <br />
+        Content 3
+        <br />
+    </div>
+    <div class="Panel x1">
+        <br />
+        Content 4
+        <br />
+    </div>
+    <div class="Panel x1">
+        <br />
+        Content 5
+        <br />
+    </div>
+    <div class="Panel x1">
+        <br />
+        Content 6
+        <br />
     </div>
 </div>
